@@ -62,7 +62,9 @@ The following are the benchmark categories:
 ## 💻 CLI Examples
 
 To run benchmarks filtering categories, use the following command:
+
     dotnet run -c release --allCategories Assemblage_Queries
 
 To include multiple categories in a single run, use:
+
     dotnet run -c release --allCategories Assemblage_Queries Component_Queries
