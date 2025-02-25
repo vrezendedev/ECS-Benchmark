@@ -2,7 +2,7 @@
 
 This benchmark evaluates various frameworks that are based on **archetypes**, which define a unique combination of component types for an entity. Archetypes serve as unique identifiers for entities that share the same component types within a world.
 
-### Frameworks Benchmarked
+### 🔳 Frameworks Benchmarked
 
 - **[Theia ECS](https://github.com/vrezendedev/TheiaECS)**
 - **[Arch](https://github.com/genaray/Arch)**  
