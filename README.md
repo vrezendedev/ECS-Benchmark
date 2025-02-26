@@ -25,12 +25,6 @@ You can access the benchmark results in the spreadsheet linked below:
 
 ---
 
-## ⚠️ Warning
-
-The current version of this benchmark is using a **.dll** for **TheiaECS**. In future updates, this will be replaced with the official **NuGet package** for easier integration and improved flexibility.
-
----
-
 ## 📩 Feedback
 
 If you notice any discrepancies or inconsistencies in the implementations, **feel free to reach out to me**.
