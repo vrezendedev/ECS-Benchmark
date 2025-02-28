@@ -23,6 +23,8 @@ You can access the benchmark results in the spreadsheet linked below:
 
 [Benchmark Results](https://docs.google.com/spreadsheets/d/e/2PACX-1vTACAEZOs7owk1YY9H7tZm9kcsstpa4pdvcBOfpsnEm0YyAaHAniUKyXpAb6oAU8594vxGA5zyks3Cq/pubhtml)
 
+If you prefer, you can check the markdown (.MD) files in the [Results](./Results/) folder. These were executed on 02/28/2025.
+
 ---
 
 ## 📩 Feedback

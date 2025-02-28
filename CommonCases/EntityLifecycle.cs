@@ -1,6 +1,7 @@
 namespace ECS.Benchmark;
 
 using BenchmarkDotNet.Attributes;
+using Friflo.Engine.ECS;
 
 #region Create Entity
 
@@ -35,10 +36,7 @@ public class EntityCreateWithOneComponentBenchmark : Benchmark
     public void Friflo_C1()
     {
         for (int i = 0; i < Entities; i++)
-        {
-            var e = FrifloEntityStore.CreateEntity();
-            e.AddComponent(new Component1_F() { Value = i });
-        }
+            FrifloEntityStore.CreateEntity(new Component1_F() { Value = i });
     }
 }
 
@@ -81,9 +79,10 @@ public class EntityCreateWithTwoComponentsBenchmark : Benchmark
     {
         for (int i = 0; i < Entities; i++)
         {
-            var e = FrifloEntityStore.CreateEntity();
-            e.AddComponent(new Component1_F() { Value = i });
-            e.AddComponent(new Component2_F() { Value = i });
+            var e = FrifloEntityStore.CreateEntity(
+                new Component1_F() { Value = i },
+                new Component2_F() { Value = i }
+            );
         }
     }
 }
@@ -132,12 +131,11 @@ public class EntityCreateWithThreeComponentsBenchmark : Benchmark
     public void Friflo_C3()
     {
         for (int i = 0; i < Entities; i++)
-        {
-            var e = FrifloEntityStore.CreateEntity();
-            e.AddComponent(new Component1_F() { Value = i });
-            e.AddComponent(new Component2_F() { Value = i });
-            e.AddComponent(new Component3_F() { Value = i });
-        }
+            FrifloEntityStore.CreateEntity(
+                new Component1_F() { Value = i },
+                new Component2_F() { Value = i },
+                new Component3_F() { Value = i }
+            );
     }
 }
 
@@ -188,13 +186,12 @@ public class EntityCreateWithFourComponentsBenchmark : Benchmark
     public void Friflo_C4()
     {
         for (int i = 0; i < Entities; i++)
-        {
-            var e = FrifloEntityStore.CreateEntity();
-            e.AddComponent(new Component1_F() { Value = i });
-            e.AddComponent(new Component2_F() { Value = i });
-            e.AddComponent(new Component3_F() { Value = i });
-            e.AddComponent(new Component4_F() { Value = i });
-        }
+            FrifloEntityStore.CreateEntity(
+                new Component1_F() { Value = i },
+                new Component2_F() { Value = i },
+                new Component3_F() { Value = i },
+                new Component4_F() { Value = i }
+            );
     }
 }
 
@@ -249,12 +246,13 @@ public class EntityCreateWithFiveComponentsBenchmark : Benchmark
     {
         for (int i = 0; i < Entities; i++)
         {
-            var e = FrifloEntityStore.CreateEntity();
-            e.AddComponent(new Component1_F() { Value = i });
-            e.AddComponent(new Component2_F() { Value = i });
-            e.AddComponent(new Component3_F() { Value = i });
-            e.AddComponent(new Component4_F() { Value = i });
-            e.AddComponent(new Component5_F() { Value = i });
+            FrifloEntityStore.CreateEntity(
+                new Component1_F() { Value = i },
+                new Component2_F() { Value = i },
+                new Component3_F() { Value = i },
+                new Component4_F() { Value = i },
+                new Component5_F() { Value = i }
+            );
         }
     }
 }
